@@ -1,0 +1,39 @@
+.floater{float: left;
+		width: 500px;
+	 margin: auto;}
+
+.clear{ clear: left; }
+
+.red{border-color: red;
+	border-width: 3px;
+	border-style: solid;}
+
+	.blue{border-color: blue;
+	border-width: 3px;
+	border-style: solid;
+	max-width: 500px;
+	 margin: auto;
+}
+
+
+.image{
+	border-color: yellow;
+	border-width: 3px;
+	border-style: solid;
+
+}
+
+.floater-right{float: right;}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a.links {display: block;
+color: red;}
+
+
+	
