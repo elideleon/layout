@@ -1,3 +1,5 @@
+/*DEEP DIVE INTO OBJECTS*/
+
 //literal notation
 
 var hotel = {
@@ -10,11 +12,17 @@ var hotel = {
 };
 
 //Using dot notation to access name propertie's value
-console.log(hotel.name);
+console.log(hotel.name); // california
 
-//Using bracket notation to access name propertie's value.
-//Have to use qoutation marks
-console.log(hotel["name"]);
+//Using bracket notation to access name propertie's value. Have to use qoutation marks
+console.log(hotel["name"]); // california
+
+
+//Setting a variable to a property
+var x = 'name';
+hotel[x]; // Is the same as hotel['name'] 
+console.log(hotel[x]); //california
+
 
 console.log("Number of rooms avaible: " + hotel.checkAvailability());
 
@@ -115,9 +123,51 @@ for (x in person) {
     
 
     console.log("key:" + x + "  Value:" + person[x]); //notice the lack of qoutation marks normally needed to iterate though values
+    												// Sqaure brackets allow use of variables
 
 
 }
+
+//Another way to create an instance of an object
+//Object.create
+
+var person = {
+  kind: 'person',
+  height: 6,
+  age: 69
+}
+
+// creates a new object which prototype is person. Set age to 13
+var zack = Object.create(person, {age: {value:  13} });
+  
+console.log("Value of person property for object zack: " + zack.kind); // => ‘person’
+
+
+
+console.log("Value of age property for object zack: " + zack.age); // => ‘13’
+
+//Getting prototype of object 
+
+console.log(Object.getPrototypeOf(zack)); //=> true //Doesnt seem to return correct prototype, only boolean value
+//or returns properties and values of its prototype and alot of other info ????
+
+console.log(zack.__proto__); // Same output as Object.getPropertypeOf(zack));
+
+console.log(zack.constructor); //ouputs 'function Object() { [native code] }'
+
+
+
+//USING SAME METHODS AS ABOVE ON INSTANCES CREATED THROUGH CONSTRUCTORS INSTEAD OF Object.create
+//Completely different results
+
+console.log(Object.getPrototypeOf(glendale)); //Returns correct constructor name, but not correct prototype
+
+console.log(glendale.__proto__); //Same as above
+
+console.log(glendale.constructor); // Returns complete constructor properties and values
+
+
+
 
 
 
