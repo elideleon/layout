@@ -9,6 +9,13 @@ var hotel = {
 	}
 };
 
+//Using dot notation to access name propertie's value
+console.log(hotel.name);
+
+//Using bracket notation to access name propertie's value.
+//Have to use qoutation marks
+console.log(hotel["name"]);
+
 console.log("Number of rooms avaible: " + hotel.checkAvailability());
 
 //creating many objects: constructor Notation
@@ -95,15 +102,7 @@ var journal = [
 ];
 
 
-//iterate through array
-// for (var i = 0; i < products.length; i++) {
-//   var product = products[i];
-//   console.log(product);
-//   for (var j = 0; j < product.sizes.length; j++) {
-//     var size = product.sizes[j];
-//     console.log(size);
-//   }
-//}
+
 
 // for..in loops through properties of object
 var person = {
@@ -112,12 +111,12 @@ var person = {
 	age:25
 }; 
 
-var text = "";
-var x;
 for (x in person) {
-    text += person[x];
+    
 
-    console.log("key:" + x + "  Value:" + person[x]);
+    console.log("key:" + x + "  Value:" + person[x]); //notice the lack of qoutation marks normally needed to iterate though values
+
+
 }
 
 
