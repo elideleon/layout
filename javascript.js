@@ -72,7 +72,7 @@ var sarah = new People("Sarah", 31, "unknown");
 var candice = new People("Candice", 34, "female");
 
 
-//Array in an Object
+//Array in an Object. Similar to Json 
 var day1 = {
   squirrel: false,
   events: ["work", "touched tree", "pizza", "running",
@@ -93,5 +93,34 @@ var journal = [
    squirrel: true},
   /* and so on... */
 ];
+
+
+//iterate through array
+// for (var i = 0; i < products.length; i++) {
+//   var product = products[i];
+//   console.log(product);
+//   for (var j = 0; j < product.sizes.length; j++) {
+//     var size = product.sizes[j];
+//     console.log(size);
+//   }
+//}
+
+// for..in loops through properties of object
+var person = {
+	fname:"John", 
+	lname:"Doe", 
+	age:25
+}; 
+
+var text = "";
+var x;
+for (x in person) {
+    text += person[x];
+
+    console.log("key:" + x + "  Value:" + person[x]);
+}
+
+
+
 
 
