@@ -1,0 +1,15 @@
+ .box {
+     position: static;
+     /*width: 1000px;
+     height: 1000px;*/
+     border: solid 10px red;
+     width: 50%;
+    
+ margin: auto;
+  }
+  
+  .inner-box {
+    display: block;
+    margin: auto;
+    width: 40%;
+    }

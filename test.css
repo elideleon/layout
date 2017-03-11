@@ -1,6 +1,6 @@
-.floater{float: left;
+/*.floater{float: left;
 		width: 500px;
-	 margin: auto;}
+	 margin: auto;} 
 
 .clear{ clear: left; }
 
@@ -8,11 +8,11 @@
 	border-width: 3px;
 	border-style: solid;}
 
-	.blue{border-color: blue;
+	/*.blue{border-color: blue;
 	border-width: 3px;
 	border-style: solid;
 	max-width: 500px;
-	 margin: auto;
+	 margin: auto; 
 }
 
 
@@ -30,10 +30,23 @@
     content: "";
     clear: both;
     display: table;
-}
+}*/
 
 a.links {display: block;
 color: red;}
 
 
-	
+#div-1a {
+	background-color: red;
+	background-position:relative;
+	top:0;
+	right:0;
+}
+
+
+
+#keanu{
+	position:absolute;
+	top: 0px;
+	right: 500px;
+}
